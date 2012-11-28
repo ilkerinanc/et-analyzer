@@ -1,0 +1,1 @@
+worker: bundle exec rake resque:work INTERVAL=1 QUEUE=et_analyze
