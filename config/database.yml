@@ -28,12 +28,13 @@ test:
   username: et_user
   host: localhost
 
+# analyzer olive
 production:
   adapter:  postgresql
   encoding: unicode
   pool: 5
-  database: dar625brqoqf8j
-  username: alunbrvcrtxhnb
-  password: QEEeX8YXEt7YFFxvoloA-JyO2s
-  host: ec2-107-22-163-190.compute-1.amazonaws.com
+  database: d8o4iotgjora9e
+  username: ecedofcseowfnu
+  password: 5VVkPXXEHmh-z02XtdHOo5W_OO
+  host: ec2-23-21-216-174.compute-1.amazonaws.com
   port: 5432
