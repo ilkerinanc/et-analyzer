@@ -36,5 +36,6 @@ class Analyzer
     #      "posted_at" => entry.created_at.utc
     #    }
     #  }
+    
   end
 end
