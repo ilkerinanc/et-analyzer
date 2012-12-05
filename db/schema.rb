@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121128201613) do
+ActiveRecord::Schema.define(:version => 20121202153612) do
 
   create_table "nodes", :force => true do |t|
     t.integer  "author_id"
@@ -25,10 +25,13 @@ ActiveRecord::Schema.define(:version => 20121128201613) do
     t.string   "location"
     t.integer  "amount"
     t.text     "extra"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "status_to_reply_to"
+    t.integer  "parent_id"
+    t.integer  "status"
   end
 
 end
