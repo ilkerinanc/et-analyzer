@@ -11,10 +11,11 @@ class Analyzer
             :value => data['entry']['value'],
             :in_reply_to_tid => data['entry']['in_reply_to_tid'],
             :permalink => data['entry']['permalink'],
-            :posted_at => data['entry']['posted_at'],
             :what => data['entry']['value'].match(/#ne(.*)#nerede/)[1].strip,
             :status => 0 # Cozum bekliyor
         )
+
+        request_node.posted_at = data['entry']['posted_at'].to_datetime.in_time_zone('Istanbul')
 
         if request_node.value.include?("#akut")
             request_node.category_id = 1
